@@ -1,5 +1,4 @@
 package com.iyuba.myapplication.view;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 /**
  * 作者：mingyu on 16-6-15 10:22
  * <p/>

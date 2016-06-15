@@ -3,6 +3,8 @@ package com.iyuba.myapplication.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
+import android.view.View;
 
 import com.iyuba.myapplication.R;
 
@@ -14,23 +16,23 @@ import com.iyuba.myapplication.R;
 public abstract class AppActivity extends BaseActivity{
     @Override
     protected int getContentViewId() {
-        return R.layout.activity_base;
+        return R.layout.activity_main;
     }
     @Override
     protected int getFragmentContentId() {
         return R.id.fragment_container;
     }
-
     protected  abstract BaseFragment getFirstFragment();
-
+    protected  abstract  void findViewById();
+    protected  abstract  void initData();
     protected void handlerIntent(Intent intent){
-
     }
-
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(getContentViewId());
+        findViewById();
+        initData();
         if(getIntent()!=null){
             handlerIntent(getIntent());
         }
@@ -41,5 +43,4 @@ public abstract class AppActivity extends BaseActivity{
             }
         }
     }
-
 }
