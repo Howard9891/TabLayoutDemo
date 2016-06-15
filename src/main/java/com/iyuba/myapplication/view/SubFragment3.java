@@ -10,9 +10,7 @@ import com.iyuba.myapplication.R;
 public class SubFragment3 extends BaseFragment {
     @Override
     protected void initView(View view, Bundle saveInstanceState) {
-
     }
-
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_sub3;

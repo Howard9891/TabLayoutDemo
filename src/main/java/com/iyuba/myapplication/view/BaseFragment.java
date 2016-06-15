@@ -23,18 +23,15 @@ public abstract class BaseFragment extends Fragment {
         super.onAttach(activity);
         this.mActivity = (BaseActivity) activity;
     }
-
     protected void addFragment(BaseFragment fragment){
         if(fragment==null) {
             return;
         }
         getHoldingActivity().addFragment(fragment);
-
     }
     protected void removeFragment(){
         getHoldingActivity().removeFragment();
     }
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

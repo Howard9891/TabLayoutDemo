@@ -54,15 +54,12 @@ public class MainActivity extends AppActivity {
             }
         });
     }
-
     @Override
     protected void initData() {
         fragments.add(new SubFragment1());
         fragments.add(new SubFragment2());
         fragments.add(new SubFragment3());
     }
-
-
     class MyViewPagerAdapter extends FragmentPagerAdapter{
         public MyViewPagerAdapter(FragmentManager fm) {
             super(fm);
