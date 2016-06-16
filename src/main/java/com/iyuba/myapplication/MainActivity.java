@@ -18,7 +18,6 @@ import com.iyuba.myapplication.view.SubFragment3;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class MainActivity extends AppActivity {
     private ViewPager viewPager;
     private TabLayout tab;
