@@ -15,7 +15,6 @@ import com.iyuba.myapplication.view.SubFragment;
 import com.iyuba.myapplication.view.SubFragment1;
 import com.iyuba.myapplication.view.SubFragment2;
 import com.iyuba.myapplication.view.SubFragment3;
-
 import java.util.ArrayList;
 import java.util.List;
 public class MainActivity extends AppActivity {
