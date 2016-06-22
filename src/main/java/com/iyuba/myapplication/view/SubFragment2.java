@@ -1,10 +1,8 @@
 package com.iyuba.myapplication.view;
-
 import android.os.Bundle;
 import android.view.View;
 
 import com.iyuba.myapplication.R;
-
 /**
  * 作者：mingyu on 16-6-15 16:42
  * <p/>

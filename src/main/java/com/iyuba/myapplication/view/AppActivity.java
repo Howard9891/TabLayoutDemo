@@ -1,13 +1,10 @@
 package com.iyuba.myapplication.view;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.view.View;
-
 import com.iyuba.myapplication.R;
-
 /**
  * 作者：mingyu on 16-6-15 11:38
  * <p/>
